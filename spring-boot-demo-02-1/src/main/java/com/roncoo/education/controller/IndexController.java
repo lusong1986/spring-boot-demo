@@ -27,6 +27,12 @@ public class IndexController {
 		return "hello world";
 	}
 
+	/**
+	 * http://127.0.0.1:8080/index/get?name=lusong
+	 * 
+	 * @param name
+	 * @return
+	 */
 	// @RequestParam 简单类型的绑定，可以出来get和post
 	@RequestMapping(value = "/get")
 	public HashMap<String, Object> get(@RequestParam String name) {
